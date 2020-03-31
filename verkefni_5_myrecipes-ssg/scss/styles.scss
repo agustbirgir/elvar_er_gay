@@ -1,0 +1,82 @@
+
+body{
+    background-color: #EF8203;
+    font-family: 'PT Sans', sans-serif;
+}
+.topmenu a{
+    display: block;
+
+}
+.topmenu{
+    list-style-type: none;;
+}
+.container{
+    max-width: 80em;
+    padding: 1em;
+}
+.img2{
+    max-width: 20%;
+}
+.mybutton{
+    background: #f7786b;
+    display: inline;
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.75em;
+    line-height: 1.5;
+    padding: .3em .9em;
+    border: 0;
+    border-radius:0.4em;
+    font-size: .80em;
+} 
+.button{
+    
+    background: #0074d9;
+    color: #fff;
+    text-decoration: none;
+    margin: .3em 0; 
+    font-size: 2em; 
+    line-height: 1.5;
+    padding: .3em .9em;
+    border: .75em;
+    border-radius:0.4em;
+    font-size: 1em;
+}  
+.card{
+    background-color:#EAE4D8 ;
+    border: 0;
+    border-radius: .6em;
+    padding: 1em;
+    /* box shadow fyrir neðan */
+    -webkit-box-shadow: 10px -5px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px -5px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px -5px 5px 0px rgba(0,0,0,0.75);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.ad {
+    max-width: 100%;
+    background-color: red;
+    animation-name: example;
+    animation-direction: alternate;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes example {
+    from {background-color: red;}
+    to {background-color: yellow;}
+  }
+.stretch{
+    display: grid;
+    grid-gap: 1em; 
+    justify-self: stretch;
+}
+.recipes{
+    background-color:#B35702;
+}
+ 
+ 
+@import 'layout','iconmoon2';//,'socialbutts';                 
