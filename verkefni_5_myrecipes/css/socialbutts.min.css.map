@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../../myrecipes-zzg/scss/socialbutts.scss"
+    ],
+    "names": [],
+    "file": "socialbutts.min.css"
+}
