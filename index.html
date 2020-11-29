@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block title %} Bílasala Benna{% endblock %}
+{% block content %}
+
+<h2>Innskráning í bílasöluna</h2>
+<form method="POST" action="login" accept-charset="UTF-8"> 
+    <p>Nafn: <input type="text" name="usrname" required placeholder="Name"></p>
+    <p>Lykilorð: <input type="password" name="psword" required placeholder="Password"></p>
+    <p><input type="submit" value="Innskráning"></p>
+</form>
+<p>Ef þú ert ekki með aðgang í bílaklúbb Benna þá getur þú <a href="/register">Skráð þig hér.</a></p>
+
+{%endblock%}

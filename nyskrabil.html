@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block title %} Bílasala Benna{% endblock %}
+{% block content %}
+
+<h1>bilasiðann þinn</h1>
+<div>
+    <form method="POST" action="nyskrabil" accept-charset="UTF-8"> 
+        <h3>nýskráning</h3>
+        <label>skráningarnúmer: <input type="text" name="nr" maxlength="6" required>
+        </label>
+        <label>
+            Tegund: <input type="text"  name="tegund" maxlength="50" required>
+        </label>
+        <label>
+            Undirtegund: <input type="text"  name="utegund" maxlength="50" required>
+        </label>
+        <label>
+            Árgerð: <input type="text"  name="argerd" maxlength="4" required>
+        </label>
+        <label>
+            Akstur: <input type="text"  name="akstur" maxlength="6" required>
+        </label>
+        <label>
+            Verð: <input type="text"  name="verd" required>
+        </label>
+        <button type="submit" name="submit">nýskrabil</button> 
+    </form>
+</div>
+
+<p>Ef þú ert ekki með aðgang í bílaklúbb benna þá getur þú <a href="/register">Skráð þig hér.</a></p>
+
+{%endblock%}

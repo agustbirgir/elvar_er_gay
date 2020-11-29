@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="is">
+    <head>
+    {% block head %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block meta_url %}{% endblock %} 
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="/static/styles.css" />
+    </head>
+    {% endblock %}
+    <body>
+        <h1>Bílasala Benna</h1>
+        <main>
+            {% block content %} {% endblock %}
+        </main>
+        <footer>&copy; 2020 Ágúst Birgir</footer>
+
+        
+    </body> 
+</html>

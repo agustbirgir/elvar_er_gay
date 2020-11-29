@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block title %} Bílasala Benna{% endblock %}
+{% block content %}
+
+<h1>bilasiðann þinn</h1>
+<form method="POST" action="breytaeyda" accept-charset="UTF-8"> 
+    <h3>breyta eða eyða upplýsingum</h3>
+    <input type="hidden" value="{{ id }}">
+    <label>Skráningarnúmer: <input type="text" value="{{ bill[2][1] }}" name="nr" maxlength="6" required>
+    </label>
+    <label>
+        Tegund: <input type="text" value="{{ bill[3][1] }}" name="tegund" required>
+    </label>
+    <label>
+        Undirtegund: <input type="text" value="{{ bill[4][1] }}" name="utegund" required>
+    </label>
+    <label>
+        Árgerð: <input type="text" value="{{ bill[1][1] }}" name="argerd" required>
+    </label>
+    <label>
+        Akstur: <input type="text" value="{{ bill[0][1] }}" name="akstur" required>
+    </label>
+    <label>
+        Verð: <input type="text" value="{{ bill[5][1] }}" name="verd" required>
+    </label>
+    <button type="submit" value="Breyta" name="beyta"> | <input type="submit" value="eyda" name="eyda">
+</form>
+<p>Ef þú ert ekki með aðgang í bílaklúbb benna þá getur þú <a href="/register">Skráð þig hér.</a></p>
+
+{%endblock%}

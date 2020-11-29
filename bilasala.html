@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+{% block title %} Skráning bifreiðar {% endblock %}
+{% block content %}
+
+<h1>þú ert kominn á síðu þína</h1>
+<h4>velkomin/n {{ user }}</h4>
+
+<table>
+    <caption>Bílaskrá</caption>
+    <thead>
+        <th>Númer</th>
+        <th>Tegund</th>
+        <th>Undirtegund</th>
+        <th>Árgerð</th>
+        <th>Akstur</th>
+        <th>verð</th>
+    </thead>
+    <tbody>
+        {% for i in bilar %}
+        <tr>
+            <td><a href="bill/{{ i[0] }}">{{ i[1]['nr'] }}</a></td>
+            <td>{{ i[1]['tegund'] }}</td>
+            <td>{{ i[1]['utegund'] }}</td>
+            <td>{{ i[1]['argerd'] }}</td>
+            <td>{{ i[1]['asktur'] }}</td>
+            <td>{{ i[1]['verd'] }}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+<p class="center"><a href="/skrabil"><button>skrábíl</button class="butt"></button></a></p>
+<p class="center"><a href="/logout"><button >útskrá</button class="butt"></button></a> </p>
+
+{%endblock%}
